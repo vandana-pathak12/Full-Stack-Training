@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form method="POST">
+        
+  <fieldset> <legend>Personal Information</legend> 
+
+    <label for="name">First Name</label>
+     <input type="text" id="name" name="first_name" required minlength="2">
+<br><br>
+       <label for="dob">Date of birth:</label>
+     <input type="date" id="dob" name="D_O_B" required>
+     <br><br>
+     
+     <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone"
+               pattern="[0-9]{10}"
+               placeholder="Enter 10-digit number" required>
+        <br><br>
+
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other" >
+        <label for="other">Other</label>
+
+    </fieldset> 
+    <br>
+
+     <fieldset> <legend>Account Information</legend> 
+       
+
+        <label for="Email">Email</label> 
+        <input type="Email" id="email" name="Email" required> 
+
+        <br><br>
+
+        <label for="password">Password</label> 
+        <input type="password" id="password" name="Password" required minlength="8"> 
+
+        <br><br>
+        
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="">Select Country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">United Kingdom</option>
+        </select>
+        <br><br>
+
+       <label for="profile-pic">Profile Picture:</label>
+        <input type="file" id="profile-pic" name="profile-pic">
+
+    </fieldset> 
+    <br>
+    
+       <button type="submit">Submit</button>
+    
+    </form>
+  
+</body>
+</html>
