@@ -18,11 +18,19 @@
 // console.log(`Pet: ${pet}, type: ${typeof pet}`);
 
 
-const num1 = 25;
-const num2 = 4;
-console.log(`Sum: ${num1 + num2}`);
-console.log(`Difference: ${num1 - num2}`);
-console.log(`Product: ${num1 * num2}`);
-console.log(`Quotient: ${num1 / num2}`);
-console.log(`Remainder: ${num1 % num2}`);
-console.log(`Power: ${num1 ** 2}`);
+// const num1 = 25;
+// const num2 = 4;
+// console.log(`Sum: ${num1 + num2}`);
+// console.log(`Difference: ${num1 - num2}`);
+// console.log(`Product: ${num1 * num2}`);
+// console.log(`Quotient: ${num1 / num2}`);
+// console.log(`Remainder: ${num1 % num2}`);
+// console.log(`Power: ${num1 ** 2}`);
+
+// const value = '100px';
+// const num = parseInt(value);
+// const result = num + 50;
+// console.log(result);
+
+//practical 4
+
