@@ -142,35 +142,106 @@
 //practical 6 build a mini calculator using function 
 
 // Function Declaration
-function add(a, b) {
-    return a + b;
-}
+// function add(a, b) {
+//     return a + b;
+// }
 
-function subtract(a, b) {
-    return a - b;
-}
+// function subtract(a, b) {
+//     return a - b;
+// }
 
-// Arrow Functions
-const multiply = (a, b) => a * b;
+// // Arrow Functions
+// const multiply = (a, b) => a * b;
 
-const divide = (a, b) => {
-    if (b === 0) {
-        return "Cannot divide by zero";
-    }
-    return a / b;
-};
+// const divide = (a, b) => {
+//     if (b === 0) {
+//         return "Cannot divide by zero";
+//     }
+//     return a / b;
+// };
 
-// BMI Function
-function calculateBMI(weight, height) {
-    return (weight / (height * height)).toFixed(2);
-}
+// // BMI Function
+// function calculateBMI(weight, height) {
+//     return (weight / (height * height)).toFixed(2);
+// }
 
-// Testing
-console.log(add(5, 3));
-console.log(subtract(10, 4));
-console.log(multiply(4, 6));
-console.log(divide(20, 5));
-console.log(divide(20, 0));
-console.log(calculateBMI(60, 1.6));
+// // Testing
+// console.log(add(5, 3));
+// console.log(subtract(10, 4));
+// console.log(multiply(4, 6));
+// console.log(divide(20, 5));
+// console.log(divide(20, 0));
+// console.log(calculateBMI(60, 1.6));
 
 //PRACTICAL 7: Process a List of Students with Array Methods
+const students = [
+    { name: "Ajay", score: 85 },
+    { name: "vijay", score: 92 },
+    { name: "Bhawana", score: 58 },
+    { name: "vandana", score: 73 },
+];
+
+// const names = students.map(student => student.name);
+
+// console.log(names);
+
+// const passed = students.filter(student => student.score >= 60);
+
+// console.log(passed);
+
+// const total = students.reduce((sum, student) => sum + student.score, 0);
+// console.log(total);
+
+// const student = students.find(student => student.name === "Priya");
+
+// console.log(student);
+
+//practise 8
+const inventory = [
+    { name: "Phone", price: 15000, category: "Electronics", stock: 10 },
+    { name: "Shirt", price: 800, category: "Clothing", stock: 0 },
+    { name: "Laptop", price: 55000, category: "Electronics", stock: 5 },
+    { name: "Shoes", price: 2000, category: "Clothing", stock: 8 },
+];
+
+// Task 1
+inventory.forEach(product => {
+    console.log(`${product.name} - Rs${product.price} (${product.stock} in stock)`);
+});
+
+// Task 2
+const electronics = inventory.filter(
+    product => product.category === "Electronics"
+);
+console.log(electronics);
+
+// Task 3
+const totalValue = inventory.reduce(
+    (sum, product) => sum + product.price * product.stock,
+    0
+);
+console.log(totalValue);
+
+// Task 4
+const outOfStock = inventory.filter(
+    product => product.stock === 0
+);
+console.log(outOfStock);
+
+// Task 5
+inventory.push({
+    name: "Watch",
+    price: 3000,
+    category: "Accessories",
+    stock: 12
+});
+
+console.log(inventory);
+
+// Challenge
+const discountedProducts = inventory.map(product => ({
+    ...product,
+    price: product.price * 0.8
+}));
+
+console.log(discountedProducts);
