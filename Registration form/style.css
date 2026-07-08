@@ -1,0 +1,138 @@
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body{
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Form Container */
+
+.container{
+    width: 800px;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+
+h1{
+    text-align: center;
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+/* Labels */
+
+label{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+/* Red Star */
+
+span{
+    color: red;
+}
+
+/* Input Fields */
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+/* Focus Effect */
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus{
+
+    border: 1px solid #007BFF;
+}
+
+/* Gender Section */
+
+.gender{
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.gender label{
+
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* Radio Buttons */
+
+input[type="radio"]{
+
+    cursor: pointer;
+}
+
+/* Button */
+
+button{
+
+    margin-top: 25px;
+    background: #2b82d9;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button Hover */
+
+button:hover{
+
+    background: #1668b8;
+}
+
+/* Responsive */
+
+@media(max-width:850px){
+
+    .container{
+        width: 95%;
+        padding: 25px;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+
+}
